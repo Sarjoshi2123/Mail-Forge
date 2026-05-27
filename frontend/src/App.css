@@ -1,0 +1,101 @@
+/* ===== GLASS CONTAINER ===== */
+.MuiContainer-root {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 45px !important;
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.6),
+    inset 0 0 1px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: white;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.MuiContainer-root:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== TITLE ===== */
+h1 {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+/* Subtitle */
+.MuiTypography-subtitle1 {
+  text-align: center;
+  margin-bottom: 30px !important;
+  opacity: 0.7;
+}
+
+/* ===== INPUT FIELDS ===== */
+.MuiTextField-root,
+.MuiFormControl-root {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+}
+
+/* Input text color */
+.MuiInputBase-root {
+  color: white !important;
+}
+
+/* Border default */
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Border focus glow */
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #7f5af0 !important;
+  box-shadow: 0 0 12px rgba(127, 90, 240, 0.6);
+}
+
+/* ===== LABEL COLOR (Your Requested Change) ===== */
+.MuiInputLabel-root {
+  color: #c4b5fd !important;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: #7f5af0 !important;
+}
+
+/* ===== PRIMARY BUTTON ===== */
+.MuiButton-contained {
+  background: linear-gradient(135deg, #7f5af0, #2cb67d) !important;
+  font-weight: 600;
+  padding: 13px;
+  border-radius: 40px !important;
+  letter-spacing: 0.6px;
+  text-transform: none;
+  font-size: 15px;
+}
+
+.MuiButton-contained:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(127, 90, 240, 0.5);
+}
+
+/* ===== OUTLINE BUTTON ===== */
+.MuiButton-outlined {
+  border-radius: 30px !important;
+  border: 2px solid #7f5af0 !important;
+  color: #7f5af0 !important;
+  text-transform: none;
+}
+
+.MuiButton-outlined:hover {
+  background: #7f5af0 !important;
+  color: white !important;
+  box-shadow: 0 0 15px rgba(127, 90, 240, 0.5);
+}
+
+/* ===== ERROR STYLE ===== */
+.MuiTypography-colorError {
+  text-align: center;
+  font-weight: 500;
+}
