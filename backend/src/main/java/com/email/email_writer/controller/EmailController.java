@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/email")
 @AllArgsConstructor
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"${cors.allowed-origins:*}", "http://localhost:5173", "http://localhost:3000"})
 public class EmailController {
 
     private final EmailService emailService;
